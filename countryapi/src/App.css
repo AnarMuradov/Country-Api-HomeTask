@@ -1,0 +1,32 @@
+:root {
+  --main-txt-color: black;
+  --main-bg-color: white;
+  --main-card-color: white;
+}
+
+.dark {
+  --main-txt-color: white;
+  --main-bg-color: #202c36;
+  --main-card-color: #2b3844;
+  transition: 500ms;
+}
+body {
+  transition: 500ms;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+}
+button {
+  color: inherit;
+  background-color: inherit;
+  border-color: var(--main-bg-color);
+}
+.country {
+  background-color: var(--main-card-color);
+}
+input {
+  background-color: var(--main-card-color);
+  color: var(--main-txt-color);
+}
+input::placeholder {
+  color: var(--main-txt-color);
+}
